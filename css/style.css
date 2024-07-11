@@ -19,3 +19,78 @@
 .navbar-nav .nav-link.active::before, .navbar-nav .nav-link.show::before,.navbar-nav .nav-link:hover::before {
     width: 75% !important;
 }
+
+header{
+    background-image: url(../imgs/hero-bg.jpg);
+    height: 91vh;
+    background-position: center;
+    background-size: cover;
+}
+.layer{
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.header-caption h1{
+    font-size: 72px;
+    font-weight: 600;
+}
+.header-caption h2{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.header-caption h2::after{
+    content: "|";
+    animation-name:job;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction:normal;
+}
+
+
+@keyframes job {
+    0%{content:"|"}
+    2.5%{content: "D|";}
+    5%{content: "De|";}
+    7.5%{content: "Des|";}
+    10%{content: "Desi|";}
+    12.5%{content: "Desig|";}
+    15%{content: "Design|";}
+    17.5%{content: "Designe|";}
+    20%{content:"Designer|"}
+    25%{content:"Designer|"}
+    27.5%{content: "Designe|";}
+    30%{content: "Design|";}
+    32.5%{content: "Desig|";}
+    35%{content: "Desi|";}
+    37.5%{content: "Des|";}
+    40%{content: "De|";}
+    42.5%{content: "D|";}
+    45%{content:"|"}
+    50%{content:"|"}
+    52.5%{content:"D|"}
+    55%{content:"De|"}
+    57.5%{content:"Dev|"}
+    60%{content:"Devel|"}
+    62.5%{content:"Devel|"}
+    65%{content:"Develo|"}
+    67.5%{content:"Develop|"}
+    70%{content:"Develope|"}
+    72.5%{content:"Developer|"}
+    75%{content:"Developer|"}
+    77.5%{content:"Develope|"}
+    80%{content:"Develop|"}
+    82.5%{content:"Develo|"}
+    85%{content:"Devel|"}
+    87.5%{content:"Deve|"}
+    90%{content:"Dev|"}
+    92.5%{content:"De|"}
+    95%{content:"D|"}
+    97.5%{content:"|"}
+    100%{content:"|"}
+}
