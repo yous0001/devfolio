@@ -1,0 +1,21 @@
+
+
+
+.navbar-nav .nav-link{
+    color: white;
+    position: relative;
+}
+.navbar-nav .nav-link::before{
+    content:"";
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    width: 0 !important;
+    height: 2px !important;
+    background-color: white;
+    transition: all 0.5s;
+}
+
+.navbar-nav .nav-link.active::before, .navbar-nav .nav-link.show::before,.navbar-nav .nav-link:hover::before {
+    width: 75% !important;
+}
