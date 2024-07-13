@@ -265,3 +265,26 @@ header{
     background-attachment:fixed;
     background-size:cover;
 }
+.writer-img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.blog-footer{
+    border-top: 1px solid #eee;
+}
+.blog-content{
+    position: relative;
+}
+.blog-content::after{
+    content: "web design";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: var(--bs-primary);
+    color: white;
+    padding: 3px;
+    border-radius: 3px;
+}
