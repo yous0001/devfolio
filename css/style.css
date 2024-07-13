@@ -153,3 +153,60 @@ header{
     font-weight: 300;
     margin-block: 20px;
 }
+
+.title h2{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #1e1e1e;
+}
+.title{
+    position: relative;
+}
+.title::after{
+    content:"";
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 5px;
+    width: 40px;
+    background-color: var(--main-color);
+
+}
+.item{
+    background-color: white;
+}
+.icon{
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 20px;
+}
+.ico-circle{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid var(--main-color);
+    transition: all 0.5s;
+}
+.icon i{
+    font-size: 32px;
+    transition: all 0.5s;
+}
+.icon:hover i{
+    color: white;
+}
+.icon:hover .ico-circle{
+    background-color: var(--main-color);
+    border-color: #cde1f8;
+}
+.item  h3{
+    font-size: 22px;
+    font-weight: 500;
+    color: #1e1e1e;
+}
+.item  p{
+    color: #4e4e4e;
+}
