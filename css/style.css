@@ -254,3 +254,14 @@ header{
     font-size: 19px;
     font-weight: 500;
 }
+.img-frame{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.testmonial{
+    background-image: url(../imgs/overlay-bg.jpg);
+    background-attachment:fixed;
+    background-size:cover;
+}
